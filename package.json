@@ -23,7 +23,7 @@
     "node",
     "setup"
   ],
-  "author": "Luke Collins",
+  "author": "Christophe Clermont",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.10.1",

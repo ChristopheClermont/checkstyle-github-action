@@ -1,8 +1,8 @@
-![build-test](https://github.com/lcollins/checkstyle-github-action/workflows/build-test/badge.svg)
+![build-test](https://github.com/ChristopheClermont/checkstyle-github-action/workflows/build-test/badge.svg)
 
 # Credit
 
-Adapted from https://github.com/jwgmeligmeyling/checkstyle-github-action to support Node 20.
+Forked from https://github.com/jwgmeligmeyling/checkstyle-github-action, then adapted from https://github.com/lcollins/checkstyle-github-action to support Node 20.
 
 # Checkstyle GitHub Action
 
@@ -52,7 +52,7 @@ jobs:
           ${{ runner.os }}-maven-
     - name: Build with Maven
       run: mvn -B verify checkstyle:checkstyle
-    - uses: lcollins/checkstyle-github-action@v2.0.0
+    - uses: ChristopheClermont/checkstyle-github-action@v2.0.0
       with:
         path: '**/checkstyle-result.xml'
 ```
@@ -88,9 +88,9 @@ Even for `pull_request` events there is the possibility to checkout the pull req
 ## Other relevant actions
 This is a Github Action in a series of other GitHub Actions. Similar actions include:
 
-* [checkstyle-github-action](https://github.com/lcollins/checkstyle-github-action)
-* [pmd-github-action](https://github.com/lcollins/pmd-github-action)
-* [spotbugs-github-action](https://github.com/lcollins/spotbugs-github-action)
+* [checkstyle-github-action](https://github.com/ChristopheClermont/checkstyle-github-action)
+* [pmd-github-action](https://github.com/ChristopheClermont/pmd-github-action)
+* [spotbugs-github-action](https://github.com/ChristopheClermont/spotbugs-github-action)
 
 ## Contributing
 
